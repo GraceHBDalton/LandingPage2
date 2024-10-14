@@ -1,7 +1,7 @@
 /* CSS General reset */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 1000;
+    padding: 1000;
     box-sizing: border-box;
   }
   
@@ -140,7 +140,10 @@
   #hero {
     position: relative;
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
+  
   
   .hero-image {
     width: 100%;
@@ -157,9 +160,11 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+    text-shadow: 0 0 5px #ffff;
   }
-  
+  .hero-text img {
+    max-height: 30px;
+  }
   .hero-text button {
     margin: var(--spacing-md);
   }
@@ -377,6 +382,10 @@
     .mobile-menu {
       display: none;
     }
+    .hero-text img {
+      width: 90%;
+}
+    
   
     .web-cards {
       /* Horizontal layout on larger screens */
@@ -423,6 +432,7 @@
     }
   
     p, span, b, i, strong, em, a, li {
+      margin: 1000px
       font-size: 1.2rem;
     }
   
